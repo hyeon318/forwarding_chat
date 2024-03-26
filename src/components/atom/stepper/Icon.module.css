@@ -1,0 +1,27 @@
+.eclipse {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.eclipseInner {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  border: 5px solid white;
+}
+
+.complete {
+  background-color: #3c1e1e;
+}
+
+.progress {
+  background-color: #fee500;
+}
+
+.pending {
+  background-color: #acacac;
+}

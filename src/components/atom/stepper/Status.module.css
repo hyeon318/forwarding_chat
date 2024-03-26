@@ -1,0 +1,23 @@
+.status {
+  font-family: NotoSans;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 3px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.complete {
+  color: #3c1e1e;
+}
+
+.progress {
+  color: #fee500;
+}
+
+.pending {
+  color: #acacac;
+}

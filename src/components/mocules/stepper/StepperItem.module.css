@@ -1,0 +1,9 @@
+.wrapper {
+  width: 225px;
+  margin-left: 80px;
+}
+
+.content {
+  display: grid;
+  padding-top: 13px;
+}
