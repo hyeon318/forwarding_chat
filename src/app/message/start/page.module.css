@@ -1,0 +1,11 @@
+.btnKakao {
+  width: 400px;
+  height: 60px;
+  border: 1px solid #3c1e1e;
+  background-color: #fee500;
+  border-radius: 15px;
+  font-family: NotoSans;
+  font-weight: bold;
+  font-size: 21px;
+  color: #3c1e1e;
+}
