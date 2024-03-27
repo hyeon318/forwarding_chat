@@ -2,3 +2,38 @@
   border-radius: 15px;
   border: 1px solid #cac8c8;
 }
+
+.btnGrp {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.content {
+  height: 500px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.btnPrev {
+  border: 1px solid #cac8c8;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 400;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnNext {
+  border: 1px solid #cac8c8;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 400;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

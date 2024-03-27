@@ -8,4 +8,7 @@
   font-weight: bold;
   font-size: 21px;
   color: #3c1e1e;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
