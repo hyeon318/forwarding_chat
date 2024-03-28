@@ -8,9 +8,13 @@ import Label from "@/components/label/Label";
 import List from "@/components/atom/list/List";
 import { useState } from "react";
 import { apiKakaoFriends } from "@/services/kakao";
+import { useSession } from "next-auth/react";
 
-export default function Page() {
+export default function TargetPage() {
   const [keyword, setKeyword] = useState<string>();
+
+  const user = useSession();
+  console.log(user);
   const getFriends = () => {
     apiKakaoFriends();
   };

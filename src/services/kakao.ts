@@ -4,7 +4,9 @@ import { env } from "process";
 export const apiKakaoProfile = async () => {
   await signIn("kakao", {
     redirect: true,
-    callbackUrl: "/api/auth/callback/kakao",
+    callbackUrl: "/message/target",
+  }).then((data) => {
+    console.log("? ", data);
   });
 };
 

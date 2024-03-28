@@ -5,11 +5,14 @@ import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { apiKakaoProfile } from "@/services/kakao";
+import { useSession } from "next-auth/react";
 
-export default function page() {
+export default function StartPage() {
+  const session = useSession();
+
   return (
     <Container
-      next="/message/target"
+      next={session.data ? "/message/target" : undefined}
       style={{
         height: "600px",
         marginTop: "25px",
