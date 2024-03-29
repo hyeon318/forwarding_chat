@@ -7,16 +7,17 @@ import TextField from "@/components/atom/input/TextField";
 import Label from "@/components/label/Label";
 import List from "@/components/atom/list/List";
 import { useState } from "react";
-import { apiKakaoFriends } from "@/services/kakao";
+import { apiKakaoFriends, shareKakao } from "@/services/kakao";
 import { useSession } from "next-auth/react";
 
 export default function TargetPage() {
   const [keyword, setKeyword] = useState<string>();
-
-  const user = useSession();
-  console.log(user);
+  const { data: session, status } = useSession();
+  console.log(session);
   const getFriends = () => {
-    apiKakaoFriends();
+    // apiKakaoMe(session?.accessToken).then(async (data) => {
+    apiKakaoFriends(session?.accessToken);
+    // });
   };
 
   return (
@@ -34,6 +35,12 @@ export default function TargetPage() {
       <Button
         className={styles.btnFriends}
         onClick={() => getFriends()}
+      >
+        친구목록 가져오기
+      </Button>
+      <Button
+        className={styles.btnFriends}
+        onClick={() => shareKakao("https://developers.kakao.com", "")}
       >
         친구목록 가져오기
       </Button>

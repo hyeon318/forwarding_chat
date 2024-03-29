@@ -11,6 +11,7 @@ const handler = NextAuth({
     KakaoProvider({
       clientId: process.env.REACT_APP_KAKAO_API_KEY ? process.env.REACT_APP_KAKAO_API_KEY : "",
       clientSecret: process.env.REACT_APP_KAKAO_SECRET_KEY ? process.env.REACT_APP_KAKAO_SECRET_KEY : "",
+      authorization: { params: { scope: "friends,talk_message,profile_nickname,profile_image" } },
     }),
   ],
   callbacks: {
